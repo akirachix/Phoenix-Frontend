@@ -1,0 +1,94 @@
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #D9D9D9;
+    color: #11579A;
+    padding-top: 20px;
+    padding: 20px;
+  }
+  .logo{
+    width: 100px;
+  }
+  .logo-image{
+    display: flex;
+    gap: 20px;
+    font-size: 28px;
+    color: #0ED290;
+    font-weight: 400;
+  }
+  .logo-text{
+    padding-top: 20px;
+  }
+  .sidebar h2 {
+    text-align: center;
+    color: black;
+  }
+  
+  .sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav li {
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+    margin-right: 10px; 
+    
+  }
+  
+  .sidebar-nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar-nav li a:hover {
+    text-decoration: underline;
+  }
+  li{
+    list-style-type: none;
+    padding: 10px;
+  } 
+  .sidebar-nav li svg {
+    margin-right: 10px; 
+  }
+  
+  .sidebar-nav li span {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar-nav li span:hover {
+    text-decoration: underline;
+  }
+  .settings{
+    margin-right: 10px; 
+    padding: 10px;
+  }
+  .settings li{
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+  }
+/* .icon{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    padding-top: 20px;
+} */
+
+  /* .sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #11579A;
+    padding-top: 20px;
+  } */
