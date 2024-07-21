@@ -1,0 +1,16 @@
+.months{
+    text-align: center;
+}
+.heading{
+    text-align: center;
+}
+.all{
+    display: flex;
+}
+.scores{
+margin-top: 10%;
+margin-left: 50px;
+}
+.overall{
+    padding: 50px;
+}

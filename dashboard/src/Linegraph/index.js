@@ -1,5 +1,6 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts';
+import './index.css'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from 'recharts';
 import CustomDot from './CustomDot';
 
 const data = [
@@ -24,14 +25,25 @@ const renderCustomDot = (props) => {
 };
 
 const Chart = () => (
-  <LineChart width={600} height={300} data={data}>
-    <CartesianGrid strokeDasharray="3 3" />
-    <XAxis dataKey="month" />
-    <YAxis />
-    <Tooltip />
-    <Line type="monotone" dataKey="score" stroke="#8884d8" dot={renderCustomDot} />
-  </LineChart>
-);
+  <div className='overall'>
+    <div>
+    <p className='heading'>Overall Scores</p>
+    </div>
+    <div className='all'>
+     <div className='scores'><p>Student's Scores</p></div>
+ <ResponsiveContainer width="100%" height={300}>
+    <LineChart data={data}>
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="month" />
+      <YAxis />
+      <Tooltip />
+      <Line type="monotone" dataKey="score" stroke="#8884d8" dot={renderCustomDot} />
+    </LineChart>
+  </ResponsiveContainer>
+  </div>
+  <div className='months'><p>Months</p></div>
+  </div>
+)
 
 export default Chart;
 
