@@ -1,0 +1,17 @@
+.app-container {
+    display: flex;
+    height: 100vh; /* Ensures the container takes the full height of the viewport */
+    
+  }
+  
+  .sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px; /* Padding around the sidebar content */
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Allows the main content to take up the remaining space */
+    padding: 20px; /* Padding around the main content */
+  }
+  
